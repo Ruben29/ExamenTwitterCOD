@@ -1,14 +1,32 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package examentwittercod;
+
+import twitter4j.Twitter;
+import twitter4j.TwitterFactory;
+import twitter4j.conf.ConfigurationBuilder;
 
 /**
  *
  * @author rfernandezgonzalez
  */
 public class MetodosTwitter {
+    
+    Twitter twitter;
+
+    /**
+     * Constructor, da acceso a nuestra cuenta en twitter.
+     */
+    public MetodosTwitter() {
+
+        ConfigurationBuilder cb = new ConfigurationBuilder();
+        cb.setDebugEnabled(true)
+                .setOAuthConsumerKey("cCwlXGbOea4tWifNEsWSYZowp")
+                .setOAuthConsumerSecret("nVckoYIfas2ucRVUROQcB0s6ZDHCpjOdvw8G6i0v72ilKY0xKy")
+                .setOAuthAccessToken("3055269988-3EClzoFaUspMzlM1O7tTebuGe3vyi5rCkSU3LiB")
+                .setOAuthAccessTokenSecret("ibohhy5rRk0ue0SQ3zhCUpmvhfEXCooULhtKfs2PUEwL5");
+
+        twitter = new TwitterFactory(cb.build()).getInstance();
+
+    }
     
 }
