@@ -22,14 +22,15 @@ public class MetodosTwitter {
      */
     public MetodosTwitter() {
 
-        ConfigurationBuilder cb = new ConfigurationBuilder();
-        cb.setDebugEnabled(true)
-                .setOAuthConsumerKey("cCwlXGbOea4tWifNEsWSYZowp")
-                .setOAuthConsumerSecret("nVckoYIfas2ucRVUROQcB0s6ZDHCpjOdvw8G6i0v72ilKY0xKy")
-                .setOAuthAccessToken("3055269988-3EClzoFaUspMzlM1O7tTebuGe3vyi5rCkSU3LiB")
-                .setOAuthAccessTokenSecret("ibohhy5rRk0ue0SQ3zhCUpmvhfEXCooULhtKfs2PUEwL5");
+        /*ConfigurationBuilder cb = new ConfigurationBuilder();
+         cb.setDebugEnabled(true)
+         .setOAuthConsumerKey("*********************")
+         .setOAuthConsumerSecret("******************************************")
+         .setOAuthAccessToken("**************************************************")
+         .setOAuthAccessTokenSecret("******************************************");
 
-        twitter = new TwitterFactory(cb.build()).getInstance();
+         twitter = new TwitterFactory(cb.build()).getInstance();*/
+        twitter = new TwitterFactory("twitter4j.properties").getInstance();
 
     }
 
