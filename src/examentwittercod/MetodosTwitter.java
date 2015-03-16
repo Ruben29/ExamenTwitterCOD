@@ -1,4 +1,3 @@
-
 package examentwittercod;
 
 import java.util.List;
@@ -15,7 +14,7 @@ import twitter4j.conf.ConfigurationBuilder;
  * @author rfernandezgonzalez
  */
 public class MetodosTwitter {
-    
+
     Twitter twitter;
 
     /**
@@ -33,7 +32,7 @@ public class MetodosTwitter {
         twitter = new TwitterFactory(cb.build()).getInstance();
 
     }
-    
+
     /**
      * Nos da nuestro timeLine
      */
@@ -47,7 +46,7 @@ public class MetodosTwitter {
         }
 
     }
-    
+
     /**
      * Busca tweets con el texto introducido
      */
@@ -60,7 +59,7 @@ public class MetodosTwitter {
         }
 
     }
-    
+
     /**
      * Crea y publica un tweet
      */
