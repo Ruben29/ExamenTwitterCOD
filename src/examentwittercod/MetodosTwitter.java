@@ -61,4 +61,14 @@ public class MetodosTwitter {
 
     }
     
+    /**
+     * Crea y publica un tweet
+     */
+    public void tweetear(String tweet) throws TwitterException {
+
+        Status status = twitter.updateStatus(tweet);
+        System.out.println("Successfully updated the status to [" + status.getText() + "].");
+
+    }
+
 }
